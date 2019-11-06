@@ -9,44 +9,64 @@
 	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
-	<header>
-		<!-- header, h1, logo etc content -->
-		<h1>There Can Be Only One Header One</h1>
-		<h2>Header Two</h2>
-		<h3>Header Three</h3>
-		<h4>Header Four</h4>
-		<p>A paragraph of lorem ipsum text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, eligendi.</p>
-	</header>
-
-	<nav>
-		<!-- Global naviagtion stuff here, but move this or delete this to your liking. Same goes for the rest -->
-		<ul>
-			<li><a href="subpage-one.html">example link to subpage one</a></li>
-			<li><a href="#">link</a></li>
-			<li><a href="#">link</a></li>
-		</ul>
-	</nav>
 	<main>
-		<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus soluta vero fugiat saepe, tempore laboriosam nemo pariatur maxime sunt rerum."</blockquote>
-	<!-- Main content here -->
-		<div class="grid">
-			<div>Column 1</div>
-			<div>Column 2</div>
+		<div class="homepage">
+			<div class="homepage-logo">
+				<h1><img src="image/logo-3d.png"></h1>
+			</div>
+			<div >
+				<ul>
+					<li class="button"><a href="about.html"><h2>ABOUT</h2></a></li>
+					<li class="button"><a href="flavors.html"><h2>FLAVORS</h2></a></li>
+				</ul>
+			</div>
 		</div>
 	</main>
 	<footer>
-		<!-- footer content here -->
-		&copy; Team Awesome
+		<div class="left">
+		<h3>Locations</h3>
+			<h4>Brick and Mortar:</h4>
+				<p>2742 East Burnside Street
+				<br>2021 Southeast Clinton Street
+				</p>
+			<h4>Food Truck:</h4>
+				<p>NW 24th Ave. and Thurman St.
+				</p>
+		</div>
+		<div class="right">
+		<h3>Contact</h3>
+			<p class="contact">503-395-3333
+			<br>hello@fifty-licks.com
+			<div class="socialmedia">
+				<img src="image/fb-icon.png">
+				<p>/fiftylicks</p>
+			</div>
+			<div class="socialmedia">
+				<img src="image/insta-icon.png">
+				<p>@fiftylicks</p>
+			</div>
+			</p>
+		</div>
+		<div class="center">
+		<h3>Hours</h3>
+			<h4>Brick and Mortar:</h4>
+				<p>Sunday–Thursday | 12pm–11pm
+				<br>Friday–Saturday | 12pm–12am
+				</p>
+			<h4>Food Truck:</h4>
+				<p>Everday | 12pm–10pm
+				</p>
+		</div>
 	</footer>
 	<!-- link for jquery -->
 	<script
-  	src="https://code.jquery.com/jquery-3.4.1.min.js"
-  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous"></script>
-  	<!-- link for your script file -->
+	  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  	crossorigin="anonymous"></script>
+	  	<!-- link for your script file -->
   	<script src="scripts/script.js"></script>
 </body>
 </html>
