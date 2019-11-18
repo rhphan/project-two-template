@@ -9,8 +9,31 @@ body {
 main {
 }
 
+.subpage-header {
+	background-image: url(../image/icecream-nav.png);
+	background-size: cover;
+	background-position: center bottom;
+	text-align: center;
+}
+
 .home {
-	background-image: url(../image/icecream-homepg.png)
+	background-image: url(../image/icecream-homepg.png);
+	padding-bottom: 50px;
+}
+
+.about-pg {
+	background-color: #FFF8E8;
+}
+
+nav {
+
+}
+
+.subpage-nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: auto;
+	padding: 0px 150px;
 }
 
 h1 img{
@@ -18,11 +41,17 @@ h1 img{
 }
 
 h2, h3{
-	font-family: 'McLaren', cursive;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
 }
 
 h2 {
 	font-size: 2em;
+}
+
+.h2-about {
+	color: #FF7D45;
 }
 
 h3 {
@@ -30,18 +59,24 @@ h3 {
 }
 
 h4 {
-	font-weight: bold;
+	font-weight: 700;
 	padding-top: 10px;
 }
 
 a { 
 	color: white;
 	text-decoration: none;
-	 }
+}
 
-.paragraph {
-	padding-bottom: 30px;
+.first-paragraph {
+	padding-bottom: 10px;
 	padding-top: 10px;
+	line-height: 150%;
+}
+
+.second-paragraph {
+	padding-bottom: 30px;
+	line-height: 150%;
 }
 
 .contact {
@@ -53,9 +88,18 @@ a {
 	margin-top: 50px;
 }
 
+ul {
+
+}
+
+.features {
+	padding-top: 10px;
+	line-height: 150%;
+	text-transform: uppercase;
+}
 
 header {
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 	display: grid;
 	grid-template-columns: 1fr;
 	padding-top: 50px;
@@ -79,8 +123,13 @@ header {
 	width: auto;
 }
 
+.subpage-logo {
+	width: 100%;
+	max-width: 500px;
+}
+
 .about {
-	padding-top: 50px;
+	padding: 50px 0px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 50px;
@@ -92,6 +141,18 @@ header {
 	width: 100%;
 }
 
+.vertical-align {
+	display: inline-block;
+	height: 200px;
+	line-height: 200px;
+}
+
+.vertical-align-img {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%
+}
+
 footer {
 	padding: 50px 0px;
 	color: white;
@@ -99,6 +160,7 @@ footer {
 	grid-template-columns: auto auto auto;
 	width: 80%;
 	margin: auto;
+	line-height: 125%;
 }
 
 .left {
@@ -120,7 +182,7 @@ footer {
 	padding-top: 5px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 862px) {
 	body {
 
 	}
@@ -141,6 +203,10 @@ footer {
 		max-width: 200px;
 	}
 
+	.about {
+		grid-template-columns: 1fr;
+	}
+
 	footer {
 		display: grid;
 		grid-template-columns: auto;
@@ -159,20 +225,20 @@ footer {
 	.socialmedia {
 		justify-content: center;
 	}
-}
-
-@media only screen and (min-width: 1240px) {
-	body {
-		
-	}
 
 	.hide-desktop {
 		display: none;
 	}
+}
+
+@media only screen and (min-width: 863px) {
+	body {
+		
+	}
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1241px) {
 	body {
 		
 	}
