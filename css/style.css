@@ -9,11 +9,22 @@ body {
 main {
 }
 
-.subpage-header {
+.about-header {
 	background-image: url(../image/icecream-nav.png);
 	background-size: cover;
 	background-position: center bottom;
 	text-align: center;
+	margin-top: -50px;
+	margin-bottom: -30px;
+}
+
+.flavors-header {
+	background-image: url(../image/icecream-nav.png);
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	margin-top: -50px;
+	margin-bottom: -30px;
 }
 
 .home {
@@ -25,6 +36,49 @@ main {
 	background-color: #FFF8E8;
 }
 
+.flavors-pg{
+	padding: 50px 0px 0px 0px;
+	background-color: #47D1C8;
+}
+
+.flavors {
+	display: grid;
+	grid-template-columns: 1fr 320px 1fr;
+	width: 80%;
+	margin: 50px auto 0px auto;
+	grid-gap: 50px 0px;
+	grid-template-rows: 10px 125px 125px 125px 125px 125px 100px 125px 125px 125px 125px 125px 125px 125px 125px ;
+	height: 3000px;
+    grid-template-areas:
+        'a a a'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .'
+        '. . .';
+}
+
+.icecream {
+	width: 300px;
+	grid-row: 1 / span 15;
+	grid-row-start: 1;
+	grid-column: 2 / 3;
+	margin: auto;
+}
+
+.flavors-top {
+	grid-area: a;
+	height: 0px;
+}
+
 nav {
 
 }
@@ -34,6 +88,7 @@ nav {
 	grid-template-columns: 1fr 1fr 1fr;
 	margin: auto;
 	padding: 0px 150px;
+	grid-column-gap: 10px;
 }
 
 h1 img{
@@ -44,6 +99,7 @@ h2, h3{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
+	color: white;
 }
 
 h2 {
@@ -68,15 +124,24 @@ a {
 	text-decoration: none;
 }
 
+.italic {
+	font-style: italic;
+}
+
+p {
+	line-height: 150%;
+	color: white;
+}
+
 .first-paragraph {
 	padding-bottom: 10px;
 	padding-top: 10px;
-	line-height: 150%;
+	color: #181818;
 }
 
 .second-paragraph {
 	padding-bottom: 30px;
-	line-height: 150%;
+	color: #181818;
 }
 
 .contact {
@@ -86,6 +151,14 @@ a {
 .button-nav {
 	text-align: center;
 	margin-top: 50px;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.center-align {
+	text-align: center;
 }
 
 ul {
@@ -123,9 +196,10 @@ header {
 	width: auto;
 }
 
-.subpage-logo {
+.subpage-logo img {
 	width: 100%;
-	max-width: 500px;
+	min-width: 100px;
+	max-width: 200px;
 }
 
 .about {
@@ -148,16 +222,16 @@ header {
 }
 
 .vertical-align-img {
-	display: inline-block;
-	vertical-align: middle;
-	height: 100%
+	display: grid;
+	align-items: center;
+	align-content: center;
 }
 
 footer {
 	padding: 50px 0px;
 	color: white;
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
 	width: 80%;
 	margin: auto;
 	line-height: 125%;
@@ -227,6 +301,14 @@ footer {
 	}
 
 	.hide-desktop {
+		display: none;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+
+	.hide-mobile-top {
 		display: none;
 	}
 }
