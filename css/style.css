@@ -19,12 +19,10 @@ main {
 }
 
 .flavors-header {
-	background-image: url(../image/icecream-nav.png);
-	background-size: cover;
-	background-position: center center;
 	text-align: center;
 	margin-top: -50px;
 	margin-bottom: -30px;
+	background-color: #FF7D45;
 }
 
 .home {
@@ -256,8 +254,38 @@ footer {
 	padding-top: 5px;
 }
 
+.hide-desktop {
+	display: none;
+}
+
+#backtotop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #FF7D45; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  font-size: 1.5em; /* Increase font size */
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900
+}
+
 @media only screen and (max-width: 862px) {
 	body {
+
+	}
+
+	.flavors-pg{
+		background-image: url(../image/icecream-vector.png);
+		background-size: auto 3000px;
+		background-repeat: no-repeat;
+		background-position: top 150px left -150px;
 
 	}
 
@@ -265,8 +293,33 @@ footer {
 		max-width: 450px;
 	}
 
+	.auto-size {
+		font-size: 1em
+	}
+
 	header {
 		width: 100%;
+	}
+
+	.subpage-nav {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: auto;
+		padding: 20px;
+		grid-column-gap: 80px;
+	}
+
+	.vertical-align {
+		display: inline-block;
+		height: 80px;
+		line-height: 80px;
+	}
+
+	.vertical-align-img {
+		display: grid;
+		align-items: center;
+		align-content: center;
+		grid-column: 1 / span 2;
 	}
 
 	.button {
@@ -279,6 +332,42 @@ footer {
 
 	.about {
 		grid-template-columns: 1fr;
+	}
+
+	.flavors-pg{
+	}
+
+	.flavors {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 70px 0px 0px 150px;
+		height: 2950px;
+		width: 50%;
+		grid-template-rows: 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px;
+		grid-template-areas:
+	        'a'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.'
+	        '.';
+	}
+
+	.flavors-top {
+		grid-area: a;
+		height: 0px;
+	}
+
+	.right-align {
+		text-align: left;
 	}
 
 	footer {
@@ -301,7 +390,7 @@ footer {
 	}
 
 	.hide-desktop {
-		display: none;
+		display: block;
 	}
 
 	.hide-mobile {
